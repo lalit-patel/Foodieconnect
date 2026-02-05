@@ -95,7 +95,7 @@ public class OrderServiceImp implements OrderService{
     }
 
     @Override
-    public void calncelOrder(Long orderId) throws Exception {
+    public void cancelOrder(Long orderId) throws Exception {
         Order order = findOrderById(orderId);
         orderRepository.deleteById(orderId);
     }
